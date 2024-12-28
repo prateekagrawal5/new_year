@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import io
 
 # Predefined image path (You can replace it with your own image path)
-PREDEFINED_IMAGE_PATH = "New Year For Stusdent.jpg"
+PREDEFINED_IMAGE_PATH = "NYFS.jpg"
 
 def add_name_to_image(image_path, first_name, middle_name, last_name):
     # Open the image
