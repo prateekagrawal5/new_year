@@ -4,6 +4,7 @@ import io
 
 # Predefined image path (You can replace it with your own image path)
 PREDEFINED_IMAGE_PATH = "NYFS.jpg"
+DATA_TYPE_PATH = "Montserrat-Regular.ttf"
 
 def add_name_to_image(image_path, first_name, middle_name, last_name):
     # Open the image
@@ -13,7 +14,7 @@ def add_name_to_image(image_path, first_name, middle_name, last_name):
     draw = ImageDraw.Draw(image)
     
     # Define the font (ensure Montserrat font file is in your directory)
-    font = ImageFont.truetype("Montserrat-Regular.ttf", 60)
+    font = ImageFont.truetype(DATA_TYPE_PATH, 60)
     
     # Concatenate the full name
     full_name = f"{first_name} {middle_name} {last_name}"
