@@ -1,2 +1,2 @@
-streamlit==1.40.2
-PIL==10.4.0
+streamlit
+PIL
