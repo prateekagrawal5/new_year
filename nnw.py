@@ -43,7 +43,7 @@ def add_name_to_image(image_path, first_name, middle_name, last_name):
 
 
 # Streamlit App
-st.title("Personalized Image Generator")
+st.title("Create & download your personalized New Year Greeting Card")
 
 # Collect user input for the name
 st.subheader("Enter Your Name")
@@ -51,7 +51,7 @@ first_name = st.text_input("First Name", placeholder="Enter your first name")
 middle_name = st.text_input("Middle Name", placeholder="Enter your middle name")
 last_name = st.text_input("Last Name", placeholder="Enter your last name")
 
-if st.button("Generate Image"):
+if st.button("Generate Greeting"):
     if first_name and last_name:  # Ensure at least first and last name are provided
         # Generate the personalized image
         personalized_image = add_name_to_image(
@@ -59,7 +59,7 @@ if st.button("Generate Image"):
         )
         
         # Display the image
-        st.image(personalized_image, caption="Your Personalized Image")
+        st.image(personalized_image, caption="Your Personalized New Year Greeting)
         
         # Convert image to bytes for download
         img_byte_arr = io.BytesIO()
